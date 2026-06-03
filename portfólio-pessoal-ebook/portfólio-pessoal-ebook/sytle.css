@@ -1,0 +1,225 @@
+body {
+        background-color: #f9f9f9;
+        font-family: Arial, sans-serif;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+}
+
+h1 {
+        text-align: center;
+}
+        
+.titulo {
+        color: #333;
+        text-transform: uppercase;
+}
+
+main {
+        flex: 1;
+        margin-left: 20px;
+        margin-right: 20px;
+}
+
+/* Centraliza a navbar na tela */
+nav {
+        display: flex;
+        justify-content: center;
+        background-color: grey;
+}
+
+.navbar ul {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        width: 100%;
+        max-width: 1200px;
+        padding: 0;
+        margin: 0;
+}
+
+.navbar li {
+        
+        flex: 1;
+}
+
+.navbar a {
+        color: #f9f9f9;
+        text-decoration: none;
+        padding: 15px;
+        display: block;
+        text-align: center;
+        transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+        background-color: hsl(0, 0%, 10%);
+}
+
+.rodape {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+}
+
+/* --- RESPONSIVIDADE --- */
+
+@media screen and (max-width: 768px) {
+    
+        .navbar ul {
+            flex-direction: column;
+            align-items: stretch;
+        }
+    
+        .navbar li {
+            width: 100%;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    
+        .navbar a {
+            padding: 20px;
+            text-align: center;
+        }
+    
+        main {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
+
+   /* Container que envelopa a área de mensagem */
+.container-mensagem {
+        background-color: white;
+        padding: 30px;
+        margin: 40px auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        max-width: 600px;
+    }
+    
+    .container-mensagem h2 {
+        color: #333;
+        margin-top: 0;
+    }
+    
+    /* Organização dos campos */
+    .campo-grupo {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .campo-grupo label {
+        font-weight: bold;
+        color: #555;
+    }
+    
+    .campo-grupo input,
+    .campo-grupo textarea {
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        transition: border-color 0.3s;
+    }
+    
+    /* Efeito de foco azul ao clicar no campo */
+    .campo-grupo input:focus,
+    .campo-grupo textarea:focus {
+        border-color: #007bff;
+        outline: none;
+    }
+    
+    .campo-grupo textarea {
+        height: 120px;
+        resize: vertical;
+    }
+    
+    /* Botão de Enviar integrado */
+    #btn-enviar-fixo {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+        transition: background-color 0.2s;
+    }
+    
+    #btn-enviar-fixo:hover {
+        background-color: #0056b3;
+    }
+    
+    /* Alerta de sucesso */
+    .alerta-sucesso {
+        display: none;
+        background-color: #d4edda;
+        color: #155724;
+        padding: 15px;
+        border-radius: 4px;
+        margin-top: 20px;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .alerta-sucesso.mostrar {
+        display: block;
+    }
+
+    /*Imagens sobre*/
+#dov {
+        display: flex;
+        justify-content: center;
+}
+
+img {
+        border-radius: 18px;
+}
+
+/* Imagens projetos*/
+
+
+/* Container principal que alinha os dois blocos lado a lado */
+.box-imagens {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      
+      /* Cada bloco individual (Imagem + Texto) */
+      .card-item {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        flex: 1;
+        min-width: 280px;
+      }
+      
+      /* Controlando o tamanho das imagens */
+      .card-item img {
+        width: 250px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+
+      
+      /* Estilização básica do texto */
+      .card-item .texto h3 {
+        margin: 0 0 5px 0;
+      }
+      
+      .card-item .texto p {
+        margin: 0;
+        color: #555;
+      }

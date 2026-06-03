@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha página</title>
+    <link rel="stylesheet" href="sytle.css">
+</head>
+<!--conteudo-site-->
+<body>
+
+    <h1 class="titulo">Bem-vindo ao meu portfólio!</h1>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Sobre</a></li>
+            <li><a href="projeto.html">Projetos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+<main class="conteudo-site"> 
+     <p><h3>Contato</h3></p>
+     <p>Quer conversar? Pode enviar uma mensagem por aqui, ou enviar um e-mail: 100172025@eniac.edu.br</p>
+
+            <section class="container-mensagem">
+                <h2>Envie uma Mensagem</h2>
+                <p>Preencha os campos abaixo para entrar em contato conosco.</p>
+                
+                <form id="form-contato">
+                    <div class="campo-grupo">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" placeholder="Digite seu nome" required>
+                    </div>
+                    
+                    <div class="campo-grupo">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" placeholder="Digite sua mensagem aqui..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" id="btn-enviar-fixo">Enviar Mensagem</button>
+                </form>
+                
+                <div id="mensagem-sucesso" class="alerta-sucesso">
+                    🎉 Mensagem enviada com sucesso! Obrigado pelo contato.
+                </div>
+            </section>
+
+</main>
+
+<!--rodapé-->
+    <footer class="rodape">
+        <hr>
+        
+        &copy; 2026 Meu site. Todos os direitos reservados.<br>
+        Contate-nos: 100172025@eniac.edu.br
+    </footer>
+   
+    <script src="script.js"></script>
+</body>
+
+</html>
